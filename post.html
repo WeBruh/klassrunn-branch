@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Klasrum classroom discussion">
+    <title>Discussion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Klasrum</a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="post.html">Posts</a>
+                <a href="post-new.html">New Post</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="page-header">
+            <p class="eyebrow">DISCUSSION</p>
+            <h1>Topics for discussion</h1>
+            <p>
+                Share and connect with each other
+            </p>
+        </div>
+
+        <article class="discussion">
+
+            <div class="discussion-header">
+                <div>
+                    <span class="tag">BSIS3-1</span>
+                    <span class="muted">Posted by Miles Today</span>
+                </div>
+
+                <a class="button small-button secondary-button"
+                   href="post-edit.html">
+                    Edit Post
+                </a>
+            </div>
+
+            <div class="discussion-content">
+
+
+                 <h2>The Artificial Intelligence(AI)</h2>
+
+                <p>
+                    Nowaday technology in something that everyone is using in their everyday life wheather they know it or not. But does the technology in these modern age really that advance or it's just the start of something even more advance
+                </p>
+
+                <p>
+                   Like What?
+                </p>
+            </div>
+
+        </article>
+
+        <section class="comments">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">COMMUNITY</p>
+                    <h2>Comments</h2>
+                </div>
+            </div>
+
+            <div class="comment">
+
+                <div class="comment-header">
+                    <strong>Gwen</strong>
+                    <span>10 minutes ago</span>
+                </div>
+
+                <p>
+                   I think most of the human population nowadays is using AI atleast once a week
+                </p>
+
+                                                        <!-- First level reply -->
+                <div class="comment reply">
+
+                    <div class="comment-header">
+                        <strong>Peter</strong>
+                        <span>5 minutes ago</span>
+                    </div>
+
+                    <p>
+                        Yeah, especially when AI can almost do anything that you ask 
+                    </p>
+
+                                                        <!-- Second level reply -->
+                    <div class="comment reply nested-reply">
+
+                        <div class="comment-header">
+                            <strong>Hobby</strong>
+                            <span>2 minutes ago</span>
+                        </div>
+
+                        <p>
+                            Exactly. But also because of it people became more productive in everyday life and make there life much easier
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <div class="comment-header">
+                    <strong>Tom</strong>
+                    <span>Just now</span>
+                </div>
+
+                <p>
+                    I also think using AI for your everyday task is something that's now normalize by many people. Still does not mean that 
+                    you're not going to use that brain of yours anymore 
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="comment-form">
+
+            <h2>Leave a Comment</h2>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="comment">Your comment</label>
+                    <textarea
+                        id="comment"
+                        name="comment"
+                        rows="5"
+                        placeholder="Write your comment here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button class="button primary-button" type="submit">
+                    Post Comment
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Klasrum. Built for IS313C.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Edit a Klasrum post">
+    <title>sEdit Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Klasrum</a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="post.html">Posts</a>
+                <a href="post-new.html">New Post</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container narrow-container">
+
+        <div class="page-header">
+            <p class="eyebrow">EDIT</p>
+            <h1>Edit Post</h1>
+            <p>
+                Update the information in your discussion.
+            </p>
+        </div>
+
+        <section class="form-card">
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="edit-title">Post title</label>
+
+                    <input
+                        type="text"
+                        id="edit-title"
+                        name="title"
+                        value="The Artificial Intelligence (AI)"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-content">Content</label>
+
+                    <textarea
+                        id="edit-content"
+                        name="content"
+                        rows="8"
+                        required
+                    >Nowaday technology in something that everyone is using in their everyday life wheather they know it or not. But does the technology in these modern age really that advance or it's just the start of something even more advance.
+
+Like What?</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-section">Section</label>
+
+                    <select
+                        id="edit-section"
+                        name="section"
+                        required
+                    >
+                        <option value="BSIS3-1" selected>
+                            BSIS3-1
+                        </option>
+
+                        <option value="general">
+                            General
+                        </option>
+
+                        <option value="announcements">
+                            Announcements
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="edit-priority">Priority</label>
+
+                    <select
+                        id="edit-priority"
+                        name="priority"
+                        required
+                    >
+                        <option value="low">
+                            Low
+                        </option>
+
+                        <option value="normal" selected>
+                            Normal
+                        </option>
+
+                        <option value="high">
+                            High
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+
+                    <a
+                        class="button secondary-button"
+                        href="post.html"
+                    >
+                        Cancel
+                    </a>
+
+                    <button
+                        class="button primary-button"
+                        type="submit"
+                    >
+                        Save Changes
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Klasrum. Built for IS313C.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

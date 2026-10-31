@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create a new Klasrum post">
+    <title>New Post</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Klasrum</a>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="post.html">Posts</a>
+                <a class="active" href="post-new.html">New Post</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container narrow-container">
+
+        <div class="page-header">
+            <p class="eyebrow">CREATE</p>
+            <h1>Create a New Post</h1>
+            <p>
+                Start a discussion with your classmates.
+            </p>
+        </div>
+
+        <section class="form-card">
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        placeholder="Enter your post title"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea
+                        id="content"
+                        name="content"
+                        rows="8"
+                        placeholder="Write your discussion..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+
+                    <fieldset>
+                        <legend>Visibility</legend>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="visibility"
+                                    value="public"
+                                    checked
+                                >
+                                Public
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="visibility"
+                                    value="class"
+                                >
+                                Class only
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="visibility"
+                                    value="private"
+                                >
+                                Private
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="section">Section</label>
+
+                    <select id="section" name="section" required>
+
+                        <option value="">
+                            Select a section
+                        </option>
+
+                        <option value="BSIS3-1">
+                            BSIS3-1
+                        </option>
+
+                        <option value="general">
+                            General
+                        </option>
+
+                        <option value="announcements">
+                            Announcements
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+
+                    <select id="priority" name="priority" required>
+
+                        <option value="">
+                            Select priority
+                        </option>
+
+                        <option value="low">
+                            Low
+                        </option>
+
+                        <option value="normal">
+                            Normal
+                        </option>
+
+                        <option value="high">
+                            High
+                        </option>
+
+                    </select>
+                </div>
+
+                <div class="form-actions">
+
+                    <a
+                        class="button secondary-button"
+                        href="index.html"
+                    >
+                        Cancel
+                    </a>
+
+                    <button
+                        class="button primary-button"
+                        type="submit"
+                    >
+                        Publish Post
+                    </button>
+                    
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Klasrum. Built for BSIS3-1.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
